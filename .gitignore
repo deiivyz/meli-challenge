@@ -1,23 +1,25 @@
-# Compiled class file
-*.class
+# meli-challenge-assembly
+.project
+.settings
+.metadata
 
-# Log file
-*.log
+# meli-challenge-domain
+meli-challenge-domain/.apt_generated
+meli-challenge-domain/.apt_generated_tests
+meli-challenge-domain/.settings
+meli-challenge-domain/.classpath
+meli-challenge-domain/.factorypath
+meli-challenge-domain/.project
+meli-challenge-domain/target
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# pay-chile-web-backend
+meli-challenge-web-backend/.apt_generated
+meli-challenge-web-backend/.apt_generated_tests
+meli-challenge-web-backend/.settings
+meli-challenge-web-backend/.classpath
+meli-challenge-web-backend/.factorypath
+meli-challenge-web-backend/.project
+meli-challenge-web-backend/target
+meli-challenge-web-backend/.mvn
+meli-challenge-web-backend/mvnw
+meli-challenge-web-backend/mvnw.cmd
