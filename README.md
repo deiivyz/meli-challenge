@@ -5,7 +5,7 @@ La secuencia de adn debe ser una matriz de NxN representada en un array de strin
 Todos los anáisis realizados son almacenados en una base de datos mongo desplegada en la nube.
 Por medio del consumo de un servicio Get, la aplicación permite consultar un reporte estadístico sobre el análisis realizado a las diferentes secuencias de ADN.
 
-El proyecto está construido bajo el módulo multi módulo de maven, donde contamos con un módulo que almacena nuestra capa web( **meli-challenge-web-backend** ) y existe un segundo módulo que se encarga de empaquetar de una manera aislada toda nuestra lógica de negocio ( **meli-challenge-domain** ).
+El proyecto está construido bajo el módulo multi módulo de maven, donde contamos con un módulo que almacena nuestra capa web ( **meli-challenge-web-backend** ) y existe un segundo módulo que se encarga de empaquetar de una manera aislada toda nuestra lógica de negocio ( **meli-challenge-domain** ).
 
 ## Instalación 🔧 
 
