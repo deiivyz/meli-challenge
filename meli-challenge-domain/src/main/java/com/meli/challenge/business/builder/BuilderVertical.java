@@ -1,7 +1,7 @@
 package com.meli.challenge.business.builder;
 
 import com.meli.challenge.business.builder.dto.BuilderDTO;
-import com.meli.challenge.functions.dto.CurrentDataDTO;
+import com.meli.challenge.business.functions.dto.CurrentDataDTO;
 import com.meli.challenge.utils.AnalyzeUtil;
 import com.meli.challenge.utils.Constants;
 import lombok.NoArgsConstructor;
@@ -21,6 +21,11 @@ public class BuilderVertical implements IBuilderWord {
             .build();
     }
 
+    
+    /**
+     * Método encargado de construir las palabras de manera vertical
+     * @param CurrentDataDTO
+     */
     public void build(CurrentDataDTO currentData) {
         this.dto.setWord(AnalyzeUtil.concat(this.dto.getWord(),
             AnalyzeUtil.getLetter(currentData.getLine(), currentData.getCurrentRow())));

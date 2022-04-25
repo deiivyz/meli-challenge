@@ -27,6 +27,11 @@ public class MutantBusiness {
         this.analyzedDnaBusiness = analyzedDnaBusiness;
     }
 
+    
+    /**
+     * Método encargado de orquestar la verificación del adn y almacenar sus datos.
+     * @param DnaRequestDTO
+     */
     public void validateDna(DnaRequestDTO requestDto) {
 
         Optional<AnalyzedDna> existDna = this.analyzedDnaBusiness.findByDna(requestDto.getDna());
@@ -46,6 +51,10 @@ public class MutantBusiness {
             .orElseThrow(NoMutantException::new);
     }
 
+    /**
+     * Método encargado de solicitar la información de las estadísticas de los datos procesados.
+     * @return StatsDTO
+     */
     public StatsDTO getStats() {
         return this.analyzedDnaBusiness.getStats();
     }

@@ -1,4 +1,4 @@
-package com.meli.challenge.functions;
+package com.meli.challenge.business.functions;
 
 import com.meli.challenge.business.builder.BuilderDiagonalLeftDown;
 import com.meli.challenge.business.builder.BuilderDiagonalLeftUp;
@@ -6,7 +6,7 @@ import com.meli.challenge.business.builder.BuilderDiagonalRightDown;
 import com.meli.challenge.business.builder.BuilderDiagonalRightUp;
 import com.meli.challenge.business.builder.BuilderVertical;
 import com.meli.challenge.business.builder.IBuilderWord;
-import com.meli.challenge.functions.dto.CurrentDataDTO;
+import com.meli.challenge.business.functions.dto.CurrentDataDTO;
 import com.meli.challenge.utils.AnalyzeUtil;
 import com.meli.challenge.utils.Constants;
 import java.util.ArrayList;
@@ -17,6 +17,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class AnalyzerFunction implements Predicate<String[]> {
 
+    /**
+     * Interfaz funcional encargada de analizar el ADN en busca de coincidencias.
+     * Si se encuentran las coincidencias necesarias para clasificar el ADN como mutante 
+     * se retorna la respuesta positiva, sin procesar los demás datos.
+     * @param DnaRequestDTO
+     */
     public boolean test(String[] dna) {
         int coincidences = 0;
 
