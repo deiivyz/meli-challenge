@@ -1,4 +1,4 @@
-package com.meli.challenge.functions.dto;
+package com.meli.challenge.business.functions.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

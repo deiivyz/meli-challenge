@@ -1,5 +1,6 @@
-package com.meli.challenge.functions;
+package com.meli.challenge.business.functions;
 
+import com.meli.challenge.business.functions.AnalyzerFunction;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;

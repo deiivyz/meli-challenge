@@ -1,7 +1,7 @@
 package com.meli.challenge.business.builder;
 
 import com.meli.challenge.business.builder.dto.BuilderDTO;
-import com.meli.challenge.functions.dto.CurrentDataDTO;
+import com.meli.challenge.business.functions.dto.CurrentDataDTO;
 import com.meli.challenge.utils.Constants;
 import com.meli.challenge.utils.AnalyzeUtil;
 import lombok.NoArgsConstructor;
@@ -21,6 +21,11 @@ public class BuilderDiagonalRightDown implements IBuilderWord {
             .build();
     }
 
+    /**
+     * Método encargado de construir las palabras de manera oblicua de la parte
+     * inferior derecha (Se excluye la diagonal principal)
+     * @param CurrentDataDTO
+     */
     public void build(CurrentDataDTO currentData) {
         if (currentData.getCurrentColumn() > currentData.getCurrentRow()) {
             this.dto.setWord(AnalyzeUtil.concat(this.dto.getWord(),

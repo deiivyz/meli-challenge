@@ -1,6 +1,6 @@
 package com.meli.challenge.business.builder;
 
-import com.meli.challenge.functions.dto.CurrentDataDTO;
+import com.meli.challenge.business.functions.dto.CurrentDataDTO;
 
 public interface IBuilderWord {
 
